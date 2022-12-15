@@ -1,3 +1,11 @@
+body {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
 .avatar {
   box-sizing: border-box;
   display: flex;
@@ -5,13 +13,11 @@
   align-items: flex-start;
   padding: 16px;
   gap: 32px;
-
   position: relative;
   width: 80px;
   height: 432px;
   background: #f5edff;
   border: 1px dashed #9747ff;
-
   margin-bottom: 20px;
 }
 .avatarStack {
@@ -25,17 +31,15 @@
   position: relative;
   width: 208px;
   height: 144px;
-  background:#F5EDFF;
+  background: #f5edff;
   border: 1px dashed #9747ff;
   margin-bottom: 20px;
 }
 .avatarStackContainer {
-
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
-
   width: 176px;
   height: 48px;
 }
@@ -51,11 +55,128 @@
   height: 32px;
 }
 /*avatar stack icons*/
-.stackIcon{
-  position: fixed;
+.stackIcon {
+  position: absolute;
 }
-.small{
+.small {
   width: 32px;
   height: 32px;
 }
 
+/* BADGE */
+
+.badgecontainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  position: relative;
+  width: 68px;
+  height: 592px;
+  padding: 16px;
+  gap: 36px;
+  color: white;
+  margin-bottom: 20px;
+}
+.badgel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 36px;
+  height: 24px;
+  background: #000000;
+  border-radius: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+.badgem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 25px;
+  height: 16px;
+  background: #000000;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+}
+.badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 18px;
+  height: 12px;
+  background: #000000;
+  border-radius: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 100%;
+}
+
+.labelcontainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 332px;
+  height: 112px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+}
+.labelcontainer1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 300px;
+  height: 24px;
+}
+.labelcontainer2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 264px;
+  height: 24px;
+}
+.labelElementStar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 68px;
+  height: 24px;
+}
+.labelElementArrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  width: 32px;
+  height: 24px;
+}
