@@ -5,6 +5,54 @@ body {
   font-size: 16px;
   line-height: 100%;
 }
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.gap8 {
+  gap: 8px;
+}
+.gap260 {
+  gap: 260px;
+}
+p {
+  margin: 0;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.textSize22{
+  font-size: 22px;
+}
+.textSize16{
+  font-size: 16px;
+}
+.textSize12{
+  font-size: 12px;
+}
+.mb32{
+  margin-bottom: 32px;
+}
+.mb25{
+  margin-bottom: 25px;
+}
+.mb14{
+  margin-bottom: 14px;
+}
 
 .avatar {
   box-sizing: border-box;
@@ -27,7 +75,6 @@ body {
   align-items: flex-start;
   padding: 16px;
   gap: 16px;
-
   position: relative;
   width: 208px;
   height: 144px;
@@ -97,6 +144,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
+  color: white;
 }
 .badgem {
   display: flex;
@@ -113,6 +161,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
+  color: white;
 }
 .badges {
   display: flex;
@@ -129,6 +178,7 @@ body {
   font-weight: 400;
   font-size: 8px;
   line-height: 100%;
+  color: white;
 }
 
 .labelcontainer {
@@ -143,6 +193,7 @@ body {
   height: 112px;
   background: #f5edff;
   border: 1px dashed #9747ff;
+  margin-bottom: 20px;
 }
 .labelcontainer1 {
   display: flex;
@@ -180,3 +231,394 @@ body {
   width: 32px;
   height: 24px;
 }
+/* buttons */
+.buttonBaseContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 148px;
+  height: 288px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 116px;
+  height: 40px;
+  background: #000000;
+  color: white;
+}
+
+/* actionButtons */
+.actionButtonContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 96px;
+  height: 384px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
+}
+.actionButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 64px;
+  height: 64px;
+  background: #000000;
+}
+
+/* checkboxes */
+.checkboxBaseContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 118px;
+  height: 272px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
+}
+.checkboxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 86px;
+  height: 36px;
+}
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 60px;
+  height: 36px;
+}
+.colorGray {
+  color: #777777;
+}
+
+.checkboxListContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 262px;
+  height: 204px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
+}
+.checkboxItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+/* CHIP elements */
+
+.chipBaseContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 148px;
+  height: 512px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
+}
+.chipLabelContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 116px;
+  height: 36px;
+  background: #000000;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+}
+.chipLabelC {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: #777777;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.chipLabelContainerS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 83px;
+  height: 28px;
+  background: #000000;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+.chipLabelCS {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  background: #777777;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.86px;
+}
+/* DIVIDER ELEMENTS */
+.dividerContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 315px;
+  height: 284px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
+}
+.dividerParts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  width: 283px;
+  height: 12px;
+}
+.divider120 {
+  width: 120px;
+  height: 0px;
+  border: 1px solid #cccccc;
+}
+.divider283 {
+  width: 283px;
+  height: 0px;
+  border: 1px solid #cccccc;
+}
+.divider127 {
+  width: 127.5px;
+  height: 0px;
+  border: 1px solid #cccccc;
+}
+.divider118 {
+  width: 118px;
+  height: 0px;
+  border: 1px solid #cccccc;
+}
+.divider124 {
+  width: 124.5px;
+  height: 0px;
+  border: 1px solid #cccccc;
+}
+.divider103 {
+  width: 103px;
+  height: 0px;
+  border: 1px solid #cccccc;
+}
+
+/* INPUT ELEMENTS */
+.singleInputContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 40px;
+  position: relative;
+  width: 352px;
+  height: 784px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
+}
+.singleInput1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  height: 66px;
+  padding: 0px;
+  gap: 4px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+.form1 {
+  padding-left: 3%;
+  width: 95%;
+  height: 24px;
+  border: 0.5% solid #000000;
+}
+p.helpText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+}
+.singleInput2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  height: 38px;
+  padding: 0px;
+  gap: 4px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+input.empty {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+.form2 {
+  padding-left: 3%;
+  width: 95%;
+  height: 24px;
+  border: 0px;
+}
+.labelPadding{
+  padding: 3px;
+  padding-right: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  background-color: white;
+}
+.customLabel {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.inputBorder1{
+  border: 0.5px solid black;
+  width: 320px;
+}
+/* LINK section */
+.linkContainer{
+  box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+position: relative;
+width: 78px;
+height: 368px;
+background: #F5EDFF;
+border: 1px dashed #9747FF;
+margin-bottom: 20px;
+}
+.linkElementContainer{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 4px;
+width: 46px;
+height: 16px;
+}
+/* pagination */
+.paginationContainer{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 256px;
+  height: 256px;
+  background: #F5EDFF;
+  border: 1px dashed #9747FF;
+  margin-bottom: 20px;
+}
+.paginationSection{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+width: 224px;
+height: 32px;
+}
+.sectionElement{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8px;
+width: 32px;
+height: 32px;
+padding: 0px;
+}
+.backgroundBlack{
+  background-color: #000000;
+  color: white;
+}
+.sectionElementB{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  border: 1px solid black;
+  }
