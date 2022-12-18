@@ -9,6 +9,10 @@ body {
   display: flex;
   flex-direction: row;
 }
+.flexCenter {
+  align-items: center;
+  justify-self: center;
+}
 .flexColumn {
   display: flex;
   flex-direction: column;
@@ -21,6 +25,9 @@ body {
 }
 .gap260 {
   gap: 260px;
+}
+.gap32 {
+  gap: 32px;
 }
 p {
   margin: 0;
@@ -35,22 +42,22 @@ a:visited {
   background-color: transparent;
   text-decoration: underline;
 }
-.textSize22{
+.textSize22 {
   font-size: 22px;
 }
-.textSize16{
+.textSize16 {
   font-size: 16px;
 }
-.textSize12{
+.textSize12 {
   font-size: 12px;
 }
-.mb32{
+.mb32 {
   margin-bottom: 32px;
 }
-.mb25{
+.mb25 {
   margin-bottom: 25px;
 }
-.mb14{
+.mb14 {
   margin-bottom: 14px;
 }
 
@@ -531,7 +538,7 @@ input.empty {
   height: 24px;
   border: 0px;
 }
-.labelPadding{
+.labelPadding {
   padding: 3px;
   padding-right: 8px;
   align-items: center;
@@ -547,35 +554,35 @@ input.empty {
   height: 100%;
   background-color: black;
 }
-.inputBorder1{
+.inputBorder1 {
   border: 0.5px solid black;
   width: 320px;
 }
 /* LINK section */
-.linkContainer{
+.linkContainer {
   box-sizing: border-box;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 16px;
-position: relative;
-width: 78px;
-height: 368px;
-background: #F5EDFF;
-border: 1px dashed #9747FF;
-margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  position: relative;
+  width: 78px;
+  height: 368px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
 }
-.linkElementContainer{
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 4px;
-width: 46px;
-height: 16px;
+.linkElementContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: 46px;
+  height: 16px;
 }
 /* pagination */
-.paginationContainer{
+.paginationContainer {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -585,33 +592,33 @@ height: 16px;
   position: relative;
   width: 256px;
   height: 256px;
-  background: #F5EDFF;
-  border: 1px dashed #9747FF;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
   margin-bottom: 20px;
 }
-.paginationSection{
+.paginationSection {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-width: 224px;
-height: 32px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  width: 224px;
+  height: 32px;
 }
-.sectionElement{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 8px;
-width: 32px;
-height: 32px;
-padding: 0px;
+.sectionElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 32px;
+  height: 32px;
+  padding: 0px;
 }
-.backgroundBlack{
+.backgroundBlack {
   background-color: #000000;
   color: white;
 }
-.sectionElementB{
+.sectionElementB {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -621,4 +628,49 @@ padding: 0px;
   height: 30px;
   padding: 0px;
   border: 1px solid black;
-  }
+}
+
+/* RADIO SECTION */
+.radioBaseContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 32px;
+  position: relative;
+  width: 354px;
+  height: 672px;
+  background: #f5edff;
+  border: 1px dashed #9747ff;
+  margin-bottom: 20px;
+}
+.radioSimpleVertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 32px;
+  height: 118px;
+}
+.radioVertical172 {
+  height: 172px;
+}
+.radioSimpleHorizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 32px;
+  width: 118px;
+  height: 18px;
+}
+.radioHorizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 22px;
+  width: 118px;
+  height: 18px;
+}
